@@ -12,40 +12,39 @@ public class UsuarioModel {
     private Long id;
 
     private String nombre;
-
     private String apellido;
-    
     private Integer edad;
+
+    public void setEdad(Integer edad){
+        this.edad = edad;
+    }
+
+    public Integer getEdad(){
+        return edad;
+    }
+
+    public Long getId() {
+        return id;
+    }
 
     public void setId(Long id) {
         this.id = id;
     }
 
-    public Long getId(Long id) {
-        return id;
+    public String getNombre() {
+        return nombre;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public String getNombre(String nombre) {
-        return nombre;
+    public String getApellido() {
+        return apellido;
     }
 
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
-
-    public String getApellido(String apellido) {
-        return apellido;
-    }
-
-    public void setEdad(Integer edad) {
-        this.edad = edad;
-    }
-
-    public Integer getEdad(Integer edad) {
-        return edad;
-    }
+    
 }
