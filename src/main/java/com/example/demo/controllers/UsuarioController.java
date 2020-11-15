@@ -28,8 +28,8 @@ public class UsuarioController {
     }
 
     @GetMapping("/query")
-    public ArrayList<UsuarioModel> obtenerUsuarioPorEdad(@RequestParam("prioridad") Integer prioridad){
-        return this.usuarioService.obtenerPorEdad(prioridad);
+    public ArrayList<UsuarioModel> obtenerUsuarioPorEdad(@RequestParam("edad") Integer edad){
+        return this.usuarioService.obtenerPorEdad(edad);
     }
 
     @DeleteMapping( path = "/{id}")
